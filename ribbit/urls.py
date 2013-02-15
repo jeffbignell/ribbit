@@ -9,8 +9,9 @@ urlpatterns = patterns('',
     url(r'^$', 'ribbit_app.views.index'), # root
     url(r'^login$', 'ribbit_app.views.login_view'), # login
     url(r'^logout$', 'ribbit_app.views.logout_view'), # logout
-    url(r'^signup$', 'ribbit_app.views.signup'), # signup
-    # url(r'^$', 'ribbit.views.home', name='home'),
+    url(r'^ribbits$', 'ribbit_app.views.public'), # public ribbits
+    url(r'^submit$', 'ribbit_app.views.submit'), # submit new ribbit    
+# url(r'^$', 'ribbit.views.home', name='home'),
     # url(r'^ribbit/', include('ribbit.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
